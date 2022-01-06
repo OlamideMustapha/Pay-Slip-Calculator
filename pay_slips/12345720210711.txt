@@ -1,0 +1,18 @@
+StaffID: 123457
+Staff Name: Smith Mary
+PPSN: 1234589AJ
+Date: 2021-07-11 00:00:00
+
+                  	   Hours	     Rate	   Total
+Regular           	       0	      20%	       0
+Overtime          	      20	      25%	     500
+Gross Pay         	        	        	     500
+
+                  	  Amount	     Rate	   Total
+Standard Rate     	     500	      20%	     100
+Higher Rate       	       0	      40%	       0
+
+Total Deductions  	        	        	     100
+Tax Credit        	        	        	     100
+Net Deductions    	        	        	       0
+Net Pay           	        	        	     500

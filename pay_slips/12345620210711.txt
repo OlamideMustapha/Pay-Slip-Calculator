@@ -1,0 +1,18 @@
+StaffID: 123456
+Staff Name: Doe John
+PPSN: 1234567AF
+Date: 2021-07-11 00:00:00
+
+                  	   Hours	     Rate	   Total
+Regular           	      37	      20%	     700
+Overtime          	      35	      30%	    1050
+Gross Pay         	        	        	    1750
+
+                  	  Amount	     Rate	   Total
+Standard Rate     	     700	      20%	     140
+Higher Rate       	    1050	      40%	     420
+
+Total Deductions  	        	        	     560
+Tax Credit        	        	        	      70
+Net Deductions    	        	        	     490
+Net Pay           	        	        	    1260

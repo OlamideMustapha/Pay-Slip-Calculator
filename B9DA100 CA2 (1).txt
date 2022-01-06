@@ -1,0 +1,95 @@
+Marking rubric:
+Documentation and comments in code: 20%
+Exercise 1: 60%
+Exercise 2: 20%
+
+Exercise 1:
+
+Employees.txt contains one line for each employee with the following information, separated by tab characters (\t)
+<StaffID>\t<Surname>\t<First Name(s)>\t<PPSNumber>\t<standard hours>\t<HourlyRate>\t<OvertimeRate>\t<taxcredit>\t<standardband>
+For Example:
+123456	Doe	John	1234567AF	37	20	30	70	700
+123457	Smith	Mary	1234589AJ	0	20	25	140	900
+
+
+Hours.txt contains the following:
+<dd/mm/yyyy>\t<StaffID>\t<hours worked>
+For Example:
+04/07/2021	123456	47
+04/07/2021	123457	40
+11/07/2021	123456	35
+11/07/2021	123457	20
+18/07/2021	123456	3
+18/07/2021	123457	45
+
+tax.json contains the following information (%):
+{"Stndard Rate":<standardrate>,"Higher Rate":<higherrate>}
+
+Store as Payslip_StaffID_YYYY_MM_DD.txt
+Reading the files, create payslip for each employee for each date (one for each line in Hours.txt) in the following format:
+Payslip_123456_2021_07_04.txt:
+                          PAYSLIP
+StaffID: 123456
+Staff Name: John Doe
+PPSN: 1234567AF
+Date: 04/07/2021
+            Hours     Rate      Total	#Totals are Hours*Rate
+Regular     37        20        740		#Cannot exceed standard hours or hours worked
+Overtime    10        30        300		#cannot be negative
+
+Gross Pay                       1040    			#Total of Total column
+                  Rate   Total
+Standard Band     700    20%       140	#Cannot exceed standardband or Gross Pay
+Higher Rate       340    40%       136	#cannot be negative
+
+Total Deductions  276					#Total of Total column for tax
+Tax Credit	   70					#Added back
+Net Deductions	  206					#cannot be negative
+Net Pay           834
+
+123457_2021_07_04.txt:
+                          PAYSLIP
+StaffID: 123457
+Staff Name: Mary Smith
+PPSN: 1234589AJ
+Date: 04/07/2021
+            Hours     Rate    Total	#Totals are Hours*Rate
+Regular     0         20          0	#Cannot exceed standard hours or hours worked
+Overtime    40        25       1000	#cannot be negative
+
+Gross Pay        1000    				#Total of Total column
+                      Rate      Total
+Standard Band     900    20%       180	#Cannot exceed standardband or Gross Pay
+Higher Rate       100    40%        40	#cannot be negative
+
+Total Deductions  220					#Total of Total column for tax
+Tax Credit	  140					#Added back
+Net Deductions	   80					#cannot be negative
+Net Pay           920
+
+
+Exercise 2:
+Also output the weekly average gross pay for all workers, for each week where there are payslips issued, 
+and the total gross pay for each employee for the last six weeks. This may be output to the terminal or to a report
+ 
+Regular hours cannot exceed hours worked or standard hours.
+Overtime is time worked exceeding standard hours.
+Pay taxed at standardrate cannot exceed gross pay or standard band.
+Pay in excess of standardband is subject to the higher rate.
+The tax credit reduces the tax payable.
+Tax payable cannot be less than zero.
+
+All information to produce the payslips should be pushed to a database of your choice.
+
+You must submit a folder containing:
+Your input files used
+Payslips produced
+Application as a .py file
+Screenshot of a select query on the database showing the records stored
+
+You must document your work, either throughout as comments, or as a separate document also included in the folder.
+
+The folder must be .zip compressed
+
+
+

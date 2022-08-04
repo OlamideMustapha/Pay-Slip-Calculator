@@ -160,7 +160,7 @@ pay_slip_df.apply (write_pay_slip, axis=1)
 # print (avg_gross_pay_per_week)
 # print (cum_gross_pay)
 
-# params = urllib.parse.quote_plus("DRIVER={ODBC Driver 17 for SQL Server};SERVER=52.151.85.62;DATABASE=B9DA100_DB;UID=sa;PWD=olamide99$$")
+# params = urllib.parse.quote_plus("DRIVER={ODBC Driver 17 for SQL Server};SERVER=52.151.85.62;DATABASE=B9DA100_DB;UID=sa;PWD=passwords")
 # engine = sqlalchemy.create_engine("mssql+pyodbc:///?odbc_connect=%s" % params)
 # engine.connect() 
 
